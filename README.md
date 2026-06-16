@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div align="center">
 
 # 🧪 QA Engineer Journey — 90 Days
@@ -199,3 +200,6 @@ QA-Engineer_journey/
 *Committed to shipping quality. One test at a time.*
 
 </div>
+=======
+# QA-Engineer_journey
+>>>>>>> 04f991c22b4c70541876b45935774fae1e663985
