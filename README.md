@@ -9,7 +9,7 @@
 ![Started](https://img.shields.io/badge/Started-June%2014%2C%202026-0a3d62?style=flat-square)
 ![Target](https://img.shields.io/badge/Target-September%202026-43B02A?style=flat-square)
 ![Days](https://img.shields.io/badge/Duration-90%20Days-7fb3d3?style=flat-square)
-![Progress](https://img.shields.io/badge/Progress-Day%201%2F56-orange?style=flat-square)
+
 
 </div>
 
