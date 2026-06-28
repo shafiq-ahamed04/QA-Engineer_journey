@@ -32,4 +32,3 @@ test_case = ["Login", "Search", "Checkout"]
 for browser in browsers:
     for test in test_case:
         print(browser, "->", test)
-        
