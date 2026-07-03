@@ -18,10 +18,13 @@ try:
         content = f.read()
 
     print(content)
+    print(10/0)
 
 except FileNotFoundError:
     print("File not found")
 except PermissionError:
     print("Permission denied")
+except ZeroDivisionError:
+    print("not divisible")
 
 
