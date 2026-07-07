@@ -1,9 +1,9 @@
 username = " shafiq ahamed "
 
 print(username)
-print(username.strip())
+username1 = username.strip()
+print(username1)
 print(username.upper())
-print(username.replace(" ", "_"))
 print(username[1:7])
 
 
