@@ -5,6 +5,5 @@ def api_validate (status_code):
         return "API FAILED"
     
 status = int(input("enter status code:"))
-print()
 print(api_validate(status))
 
