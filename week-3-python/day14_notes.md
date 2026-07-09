@@ -60,7 +60,3 @@ Manual Tester thinks:
     -for example code and better understanding , Refer the practice file (day-14_oops_basics)
 
                                 -----END-----
-
-
-
-
