@@ -5,7 +5,7 @@ driver = webdriver.Chrome()
 
 driver.get("https://www.google.com")
 
-element = driver.find_element(By.CSS_SELECTOR, "input[name='q']")
+element = driver.find_element(By.NAME, "q")
 print(element)
 
 driver.quit()
