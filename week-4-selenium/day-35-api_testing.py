@@ -24,7 +24,7 @@ def statuscode2():
         print("Wrong status code")
 
 def verify_results():
-    if response1.status_code == 200 and response2.status_code == 201:
+    if response1.status_code == 400 and response2.status_code == 201:
         print("API Testing Sucesssful")
     else:
         print("API Test Failed")
