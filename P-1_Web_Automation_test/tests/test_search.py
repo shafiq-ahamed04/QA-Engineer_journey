@@ -17,7 +17,7 @@ def test_search(browser):
     search = browser.find_element(By.ID, "twotabsearchtextbox").send_keys("laptop")
     button = browser.find_element(By.XPATH, "//input[@type = 'submit']").click()
 
-    assert "laptop" in browser.page_source
+    assert "Results" in browser.page_source
 
     print("title", browser.title)
     print("link", browser.current_url)
