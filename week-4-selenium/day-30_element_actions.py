@@ -1,27 +1,18 @@
+import pytest 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome()
+def test_login():
 
-driver.get("https://demoqa.com/text-box")
+    driver = webdriver.Chrome()
+    driver.get("https://the-internet.herokuapp.com/login")
 
-username = driver.find_element(By.ID, "userName")
-username.send_keys("shafiq")
+    driver.find_element(By.ID, "username").send_keys("valid_user")
+    driver.find_element(By.ID, "password").send_keys("valid_password")
+    driver.find_element(By.CLASS_NAME, "radius").click()
 
-email = driver.find_element(By.ID, "userEmail")
-email.send_keys("shafiq@gmail.com")
+    page_text = driver.page_source 
+    assert "Dashboard" in page_text
 
-current_address = driver.find_element(By.ID, "currentAddress")
-current_address.send_keys("Trichy")
-
-permt_address = driver.find_element(By.ID, "permanentAddress")
-permt_address.send_keys("Tamilnadu")
-
-button = driver.find_element(By.ID, "submit")
-button.click()
-
-print("typed successfully")
-
-input("Press Enter to Close...")
-driver.quit()
+    driver.quit()

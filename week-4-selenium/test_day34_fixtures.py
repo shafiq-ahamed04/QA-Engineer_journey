@@ -1,24 +1,15 @@
-import pytest 
-from selenium import webdriver
+import pytest
+import requests
 
-@pytest.fixture
-def qa():
+def test_post():
+    data = {
+        "title": "QA",
+        "body" : "hello"
+    }
 
-    driver = webdriver.Chrome()
-    driver.implicitly_wait(10)
+    response = requests.post("https://jsonplaceholder.typicode.com/posts", json = data)
 
-    yield driver
-
-    driver.quit()
-
-def test_amazon(qa):
-    qa.get("https://www.amazon.in")
-    print("Title: ", qa.title)
-
-def test_google(qa):
-    qa.get("https://www.google.com")
-    print("Title: ", qa.title)
-
-def test_github(qa):
-    qa.get("https://www.github.com")
-    print("Title: ", qa.title)
+    print(response.json())
+    assert response.json()
+    assert response.json() ["title"] == "QA"
+    assert response.status_code == 201

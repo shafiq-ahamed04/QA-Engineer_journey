@@ -1,9 +1,9 @@
-def login(username, password):
-    if username == "admin" and password == "1234":
-        return "login succesfull"
-    else:
-        return "Invalid credentials"
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
-print(login("admin", "1234"))
-print(login("shafiq", "erty"))
-print(login("ahmed", "df56"))
+driver = webdriver.Chrome()
+
+driver.get("https://practicetestautomation.com/practice-test-login/")
+
+driver.find_element(By.ID, "username").send_keys("shafiq")
+driver.quit()
